@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="坦尚尼亞 Safari 與烏干達大猩猩追蹤的私房遊記與行程拆解。把走過的路，留一盞燈，陪你慢慢走向非洲，從真實經驗出發，理解路線、費用與準備。">
+    <title>非洲旅遊私房指南｜坦尚尼亞・烏干達｜把走過的路，留一盞燈</title>
+
+    <link rel="preload" as="image" href="images/home-ambient.jpg">
+
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="page-home">
+<header>
+  <nav>
+    <a href="index.html" class="logo">
+  <img src="images/logo_icon_only.svg" alt="非洲旅遊研究所" class="logo-img">
+
+  <span class="logo-text-group">
+    <span class="logo-text-zh">非洲旅遊研究所</span>
+    <span class="logo-text-en">Africa Travel Institute (ATI)</span>
+  </span>
+</a>
+    <ul>
+      <li><a href="tanzania.html">坦尚尼亞</a></li>
+      <li><a href="uganda.html">烏干達</a></li>
+      <li><a href="about.html">關於我們</a></li>
+      <li>
+        <a href="#" class="cta-link cta-button cta-button-outline">
+          行程諮詢
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero hero--home">
+    <h1>有些旅行，是站在草原上才會懂</h1>
+    <div class="hero-subtitle">
+        這裡，是坦尚尼亞與烏干達的私房遊記<br>
+        記錄了Safari與大猩猩追蹤的真實體驗<br>
+        將感動，帶到屬於你的旅程
+    </div>
+    <p class="hero-intro poetic-text">
+        請選一個你想先靠近的地方!
+    </p>
+</section>
+
+<section>
+  <div class="cards-container cards-container--home">
+    <a href="tanzania.html" class="card-link">
+      <div class="card card--media card--tanzania">
+        <div class="card-inner">
+
+          <!-- ✅ 新增：標題群組 -->
+          <div class="card-title-group">
+            <h3>坦尚尼亞</h3>
+            <p class="card-subtitle">Serengeti · Ngorongoro</p>
+          </div>
+
+          <p class="card-text">
+            清晨的草原沒有聲音，<br>
+            只有風、腳印，和慢慢靠近的獅群。<br>
+            這裡，是第一次愛上非洲的地方。
+          </p>
+          <span class="card-cta">走進草原 →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="uganda.html" class="card-link">
+      <div class="card card--media card--uganda">
+        <div class="card-inner">
+
+          <!-- ✅ 新增：標題群組 -->
+          <div class="card-title-group">
+            <h3>烏干達</h3>
+            <p class="card-subtitle">Bwindi · Gorilla Trekking</p>
+          </div>
+
+          <p class="card-text">
+            走進雨林之前，你不知道會遇見什麼。<br>
+            直到牠在霧氣中看向你，<br>
+            那一刻，你會記得一輩子。
+            <br>
+            <br>
+          </p>
+          <span class="card-cta">走進雨林 →</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="about.html" class="card-link">
+      <div class="card card--media card--about">
+        <div class="card-inner">
+
+          <!-- ✅ 新增：標題群組 -->
+          <div class="card-title-group">
+            <h3>關於我們</h3>
+            <p class="card-subtitle">Why Africa · Why Now</p>
+          </div>
+
+          <p class="card-text">
+            曾經，我也以為非洲遙不可及<br>
+            研究與走訪後才懂：<br>
+            它很可愛，也可以很親近。
+            <br>
+            <br>
+          </p>
+          <span class="card-cta">認識我們 →</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<footer>
+    <p>把走過的路，留一盞燈，陪你慢慢走向非洲</p>
+    <p>
+        <a href="tanzania.html">坦尚尼亞</a> ·
+        <a href="uganda.html">烏干達</a> ·
+        <a href="about.html">關於我們</a>
+    </p>
+    <p class="footer-copyright">
+        © 2026 非洲旅遊研究所
+</footer>
+
+<button class="floating-cta">行程諮詢</button>
+
+<div id="ctaModal" class="modal">
+    <div class="modal-content contact-modal">
+        <button class="modal-close-btn" onclick="closeModal()" aria-label="關閉">×</button>
+        <h2>聯絡我們</h2>
+        <p class="contact-intro">歡迎透過以下方式與我們聯繫</p>
+        
+        <!-- Email 聯絡方式 (單獨在上面) -->
+        <div class="contact-methods-email">
+            <div class="contact-item-horizontal email-item">
+                <div class="contact-icon email-icon">✉</div>
+                <div class="contact-info-horizontal">
+                    <h3>電子郵件</h3>
+                    <a href="mailto:safariafricaati@gmail.com" class="contact-link">safariafricaati@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Line 和 Instagram 聯絡方式 (並排) -->
+        <div class="contact-methods-horizontal">
+            <!-- Line 聯絡方式 -->
+            <div class="contact-item-horizontal line-item">
+            <div class="contact-icon line-icon">
+            <img src="images/Line_logo.svg" alt="LINE" class="line-logo">
+        </div>
+
+                <div class="contact-info-horizontal">
+                    <h3>Line</h3>
+                    <a href="https://line.me/R/ti/p/@920gpjml" target="_blank" class="line-join-link">點我加入</a>
+                </div>
+            </div>
+            
+            <!-- Instagram 聯絡方式 -->
+            <div class="contact-item-horizontal instagram-item">
+                <div class="contact-icon instagram-icon">
+  <img src="images/Instagram_Glyph_Gradient.svg" alt="Instagram" class="instagram-logo">
+</div>
+                <div class="contact-info-horizontal">
+                    <h3>Instagram</h3>
+                    <a href="https://www.instagram.com/africa_travel_institute?igsh=c2RweXU1ZXdkOHJp&utm_source=ig_contact_invite" target="_blank" class="instagram-join-link">點我加入</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- QR Code 區域 -->
+        <div class="qr-code-section">
+            <p class="qr-label">掃描或點擊 QR Code</p>
+            <div class="qr-codes-container">
+                <div class="qr-code-item">
+                    <p class="qr-code-label">Line</p>
+                    <a href="https://line.me/R/ti/p/@920gpjml" target="_blank" class="qr-code-link">
+                        <img src="images/line_QR_code.png" alt="Line 官方帳號 QR Code" class="qr-code-img">
+                    </a>
+                </div>
+                <div class="qr-code-item">
+                    <p class="qr-code-label">Instagram</p>
+                    <a href="https://www.instagram.com/africa_travel_institute?igsh=c2RweXU1ZXdkOHJp&utm_source=ig_contact_invite" target="_blank" class="qr-code-link">
+                        <img src="images/instagram_QR_code.png" alt="Instagram QR Code" class="qr-code-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
