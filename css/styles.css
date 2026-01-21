@@ -2130,3 +2130,27 @@ footer a:hover {
   }
 }
 
+/* =========================
+   FIX 1：Article Title 上方空白（Mobile）
+   只影響文章頁，不影響 Tanzania Hero
+   ========================= */
+@media (max-width: 768px) {
+  .page-article .article-hero.article-hero--tanzania {
+    padding-top: 3.2rem !important;
+    padding-bottom: 4rem;
+  }
+}
+
+/* =========================
+   FIX 2：Article Meta 置中（Mobile）
+   ========================= */
+@media (max-width: 768px) {
+  .page-article .article-meta {
+    align-items: center;   /* ← 關鍵 */
+    text-align: center;
+  }
+
+  .page-article .article-meta span {
+    justify-content: center;
+  }
+}
