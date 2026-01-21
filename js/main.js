@@ -7,14 +7,14 @@
 function openModal() {
   const modal = document.getElementById('ctaModal');
   if (modal) {
-    modal.style.display = 'block';
+    modal.classList.add('is-open');   // ✅ 改成加 class
   }
 }
 
 function closeModal() {
   const modal = document.getElementById('ctaModal');
   if (modal) {
-    modal.style.display = 'none';
+    modal.classList.remove('is-open'); // ✅ 改成移除 class
   }
 }
 
