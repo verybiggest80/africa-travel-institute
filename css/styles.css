@@ -1423,6 +1423,14 @@ footer a:hover {
   }
 }
 
+/* ===== Article Hero - Mobile 修正 ===== */
+@media (max-width: 768px) {
+  .article-hero {
+    padding-top: 3.5rem;   /* 原本 10rem → 縮掉 */
+    padding-bottom: 4rem;  /* 保留呼吸感 */
+  }
+}
+
 /* =====================================================
    15. Hero (Page-specific) - Tanzania
    系列規範：
@@ -1719,6 +1727,10 @@ footer a:hover {
 .article-sidebar,
 .article-related-mobile {
   display: none;
+}
+
+.article-meta {
+  text-align: center;
 }
 
 /* =====================================================
@@ -2069,6 +2081,24 @@ footer a:hover {
   .article-subsection p {
     text-align: left;
   }
+
+/* ================================
+   Mobile – 延伸閱讀（你可能也想看）
+   ================================ */
+.related-article-card h4 {
+  text-align: left;        /* 明確保持左對齊（不置中） */
+  line-height: 1.5;
+}
+
+.related-article-card p {
+  font-size: 0.95rem;      /* 手機閱讀更舒服 */
+}
+
+/* （可選）增加一點編輯感，不影響點擊 */
+.related-article-card h4::before {
+  content: '— ';
+  color: rgba(184, 92, 56, 0.6);
+}
 
   .article-toc,
   .toc-container {
