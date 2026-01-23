@@ -2154,3 +2154,167 @@ footer a:hover {
     justify-content: center;
   }
 }
+
+/* =====================================================
+   ✅ About Page – E-E-A-T / 醫師視角提醒（只影響 about.html）
+   用途：讓 about.html 新增的 .article-note 更像「專業提醒」框
+   ===================================================== */
+
+.page-about .article-note {
+  /* 版面與邊界 */
+  max-width: 760px;
+  margin: 2.2rem auto 0;
+  padding: 1.4rem 1.5rem;
+
+  /* 視覺（更乾淨、更可信） */
+  background: rgba(250, 248, 243, 0.92);
+  border-radius: 16px;
+  border: 1px solid rgba(184, 92, 56, 0.16);
+  border-left: 5px solid rgba(184, 92, 56, 0.65);
+  box-shadow: 0 14px 34px rgba(59, 47, 47, 0.10);
+
+  /* 文字（避免過度詩性、讓內容更像「說明」） */
+  color: rgba(59, 47, 47, 0.86);
+  font-style: normal;
+  line-height: 2.0;
+  text-align: left;
+
+  /* 讓內容可選取/可互動（你原本的 .article-note 有 pointer-events: none） */
+  pointer-events: auto;
+}
+
+.page-about .article-note p {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+.page-about .article-note strong {
+  font-family: 'Noto Serif TC', serif;
+  font-weight: 700;
+  color: rgba(59, 47, 47, 0.95);
+}
+
+/* 小標題行距微調：讓第一行更像「標籤」 */
+.page-about .article-note p br:first-of-type {
+  line-height: 1.2;
+}
+
+/* 手機版：稍微收斂 padding 與字級 */
+@media (max-width: 768px) {
+  .page-about .article-note {
+    padding: 1.15rem 1.1rem;
+    border-radius: 14px;
+  }
+
+  .page-about .article-note p {
+    font-size: 0.98rem;
+    line-height: 1.95;
+  }
+}
+
+/* =====================================================
+   ✅ Safari Note Block（遊獵筆記）
+   用途：每個章節結尾、圖片前的整理小卡
+   ===================================================== */
+
+.safari-note {
+  background-color: rgba(243, 236, 220, 0.55);
+  border-radius: 16px;
+  padding: 1.6rem 1.6rem 1.35rem;
+  border-left: 4px solid rgba(184, 92, 56, 0.75);
+  border: 1px solid rgba(184, 92, 56, 0.14);
+  box-shadow: 0 14px 34px rgba(59, 47, 47, 0.08);
+  margin: 2.3rem 0 1.8rem; /* 上：和內文分隔；下：留給圖片呼吸 */
+}
+
+.safari-note__title {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: rgba(59, 47, 47, 0.92);
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 0.9rem;
+}
+
+.safari-note__title::before {
+  content: '🦁';
+  font-size: 1.1rem;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.safari-note__text {
+  margin: 0 0 0.9rem 0;
+  color: rgba(59, 47, 47, 0.82);
+  line-height: 1.95;
+  font-size: 1rem;
+}
+
+.safari-note__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.safari-note__list li {
+  position: relative;
+  padding-left: 1.05rem;
+  margin: 0.55rem 0;
+  color: rgba(59, 47, 47, 0.82);
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+.safari-note__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.78rem;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background-color: rgba(184, 92, 56, 0.75);
+}
+
+@media (max-width: 768px) {
+  .safari-note {
+    padding: 1.25rem 1.15rem 1.05rem;
+    border-radius: 14px;
+    margin: 2rem 0 1.4rem;
+  }
+
+  .safari-note__title {
+    font-size: 1.05rem;
+  }
+
+  .safari-note__text,
+  .safari-note__list li {
+    font-size: 0.98rem;
+  }
+}
+
+/* ===============================
+   Inline Related Reading（章節延伸閱讀）
+   =============================== */
+
+.article-related-inline {
+  margin: 1.2rem 0 1.8rem;
+  font-size: 0.95rem;
+  color: rgba(59, 47, 47, 0.75);
+}
+
+.article-related-inline a {
+  color: rgba(184, 92, 56, 0.95);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(184, 92, 56, 0.35);
+  padding-bottom: 2px;
+}
+
+.article-related-inline a:hover {
+  color: rgba(184, 92, 56, 1);
+  border-bottom-color: rgba(184, 92, 56, 0.7);
+}
+
