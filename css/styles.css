@@ -56,14 +56,16 @@ nav {
   font-family: 'Noto Serif TC', serif;
   display: flex;
   align-items: center;
-  gap: 0.01rem;                 /* 圖與字的呼吸感 */
+  gap: 0.01rem;
+  /* 圖與字的呼吸感 */
   text-decoration: none;
   letter-spacing: 0.04em;
 }
 
 /* Logo 圖示（主角） */
 .logo-img {
-  height: 60px;               /* ⬅️ 放大圖示，讓它成為視覺核心 */
+  height: 60px;
+  /* ⬅️ 放大圖示，讓它成為視覺核心 */
   width: auto;
   display: block;
 }
@@ -71,7 +73,8 @@ nav {
 /* Logo 文字（輔助，不搶圖） */
 .logo-text {
   font-family: 'Noto Serif TC', serif;
-  font-size: 1.25rem;         /* ⬅️ 微調，不壓過圖 */
+  font-size: 1.25rem;
+  /* ⬅️ 微調，不壓過圖 */
   font-weight: 600;
   color: var(--terra-red);
   line-height: 1.1;
@@ -98,12 +101,17 @@ nav {
 /* 英文副標（更小、更淡，避免搶戲） */
 .logo-text-en {
   font-family: 'Noto Sans TC', sans-serif;
-  font-size: 0.65rem;          /* 👈 明顯小一階 */
-  font-weight: 400;            /* 👈 比中文更輕 */
-  color: rgba(184, 92, 56, 0.6);/* 👈 再淡一點 */
-  letter-spacing: 0.08em;      /* 👈 拉開字距，顯得安靜 */
+  font-size: 0.65rem;
+  /* 👈 明顯小一階 */
+  font-weight: 400;
+  /* 👈 比中文更輕 */
+  color: rgba(184, 92, 56, 0.6);
+  /* 👈 再淡一點 */
+  letter-spacing: 0.08em;
+  /* 👈 拉開字距，顯得安靜 */
   margin-top: 0.15rem;
-  transition: color 0.25s ease; /* 👈 加這行 */
+  transition: color 0.25s ease;
+  /* 👈 加這行 */
 }
 
 /* Logo hover 時，英文副標稍微加深（中文維持不變） */
@@ -227,8 +235,13 @@ h2 {
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* =====================================================
@@ -251,12 +264,10 @@ h2 {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(59, 47, 47, 0.35) 0%,
-    rgba(59, 47, 47, 0.55) 55%,
-    rgba(59, 47, 47, 0.65) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(59, 47, 47, 0.35) 0%,
+      rgba(59, 47, 47, 0.55) 55%,
+      rgba(59, 47, 47, 0.65) 100%);
   z-index: 0;
 }
 
@@ -362,7 +373,8 @@ h2 {
 }
 
 .card--media {
-  padding: 0;                 /* 讓背景圖滿版 */
+  padding: 0;
+  /* 讓背景圖滿版 */
   border: 1px solid rgba(250, 248, 243, 0.25);
   background-color: transparent;
   min-height: 360px;
@@ -385,7 +397,8 @@ h2 {
 
 /* ✅ 結構升級：標題群組固定高度（真正讓三張卡標題對齊） */
 .page-home .card--media .card-title-group {
-  min-height: 6.4rem;         /* 關鍵：統一標題區高度 */
+  min-height: 6.4rem;
+  /* 關鍵：統一標題區高度 */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -414,12 +427,10 @@ h2 {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(59, 47, 47, 0.15) 0%,
-    rgba(59, 47, 47, 0.35) 45%,
-    rgba(59, 47, 47, 0.70) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(59, 47, 47, 0.15) 0%,
+      rgba(59, 47, 47, 0.35) 45%,
+      rgba(59, 47, 47, 0.70) 100%);
   z-index: 1;
 }
 
@@ -444,18 +455,24 @@ h2 {
 
 /* ✅ 卡片 hover：微微加深遮罩、增加質感 */
 .page-home .card--media:hover:after {
-  background: linear-gradient(
-    180deg,
-    rgba(59, 47, 47, 0.20) 0%,
-    rgba(59, 47, 47, 0.45) 45%,
-    rgba(59, 47, 47, 0.78) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(59, 47, 47, 0.20) 0%,
+      rgba(59, 47, 47, 0.45) 45%,
+      rgba(59, 47, 47, 0.78) 100%);
 }
 
 /* 桌機版（16:9）背景 */
-.card--tanzania { background-image: url('../images/tanzania-desktop.jpg'); }
-.card--uganda   { background-image: url('../images/uganda-desktop.jpg'); }
-.card--about    { background-image: url('../images/about-desktop.jpg'); }
+.card--tanzania {
+  background-image: url('../images/tanzania-desktop.jpg');
+}
+
+.card--uganda {
+  background-image: url('../images/uganda-desktop.jpg');
+}
+
+.card--about {
+  background-image: url('../images/about-desktop.jpg');
+}
 
 /* ✅ Tanzania 標題視覺重心微調（只影響這一張卡） */
 .page-home .card--tanzania .card-title-group {
@@ -464,12 +481,21 @@ h2 {
 
 /* 手機版（4:5）背景：<=768px 自動切換 */
 @media (max-width: 768px) {
-  .card--tanzania { background-image: url('../images/tanzania-mobile.jpg'); }
-  .card--uganda   { background-image: url('../images/uganda-mobile.jpg'); }
-  .card--about    { background-image: url('../images/about-mobile.jpg'); }
+  .card--tanzania {
+    background-image: url('../images/tanzania-mobile.jpg');
+  }
+
+  .card--uganda {
+    background-image: url('../images/uganda-mobile.jpg');
+  }
+
+  .card--about {
+    background-image: url('../images/about-mobile.jpg');
+  }
 
   .card--media {
-    min-height: 420px; /* 4:5 圖比較直，給它多一點高度看起來更飽滿 */
+    min-height: 420px;
+    /* 4:5 圖比較直，給它多一點高度看起來更飽滿 */
   }
 
   .card--media .card-inner {
@@ -534,9 +560,12 @@ h2 {
 .article-block-title::after {
   content: '';
   display: block;
-  width: 72px;                 /* 線不要太長 */
-  height: 1px;                 /* 細線 */
-  margin: 0.75rem auto 0;      /* 與標題保持呼吸 */
+  width: 72px;
+  /* 線不要太長 */
+  height: 1px;
+  /* 細線 */
+  margin: 0.75rem auto 0;
+  /* 與標題保持呼吸 */
   background-color: rgba(59, 47, 47, 0.18);
 }
 
@@ -566,6 +595,7 @@ h2 {
   color: rgba(59, 47, 47, 0.7);
   margin-bottom: 0;
 }
+
 /* =====================================================
    ✅ About Page Typography Tweak (我們怎麼做：比例微調)
    只影響 about.html（需 body.page-about）
@@ -573,15 +603,20 @@ h2 {
 
 /* H2 稍微收斂一點，避免壓過內文 */
 .page-about h2 {
-  font-size: 2.05rem;      /* 原本 2.2rem */
-  margin-bottom: 2.2rem;   /* 原本 2rem，略放鬆一點讓段落更呼吸 */
+  font-size: 2.05rem;
+  /* 原本 2.2rem */
+  margin-bottom: 2.2rem;
+  /* 原本 2rem，略放鬆一點讓段落更呼吸 */
 }
 
 /* 內文：稍微加大、行距收斂、限制寬度讓閱讀更像「排版」 */
 .page-about .poetic-text {
-  font-size: 1.08rem;      /* 原本 1.15rem（看起來小是因為行距太鬆，這裡改成更穩的組合） */
-  line-height: 2.05;       /* 原本 2.2 */
-  margin-bottom: 2.1rem;   /* 原本 2.5rem */
+  font-size: 1.08rem;
+  /* 原本 1.15rem（看起來小是因為行距太鬆，這裡改成更穩的組合） */
+  line-height: 2.05;
+  /* 原本 2.2 */
+  margin-bottom: 2.1rem;
+  /* 原本 2.5rem */
   max-width: 720px;
   margin-left: auto;
   margin-right: auto;
@@ -589,8 +624,10 @@ h2 {
 
 /* 1) 2) 3) 4) 標題：縮小一點 + 收緊段落間距，讓標題與內文更成比例 */
 .page-about .content-section h3 {
-  font-size: 1.45rem;      /* 原本 1.6rem */
-  margin-bottom: 1.05rem;  /* 原本 1.5rem */
+  font-size: 1.45rem;
+  /* 原本 1.6rem */
+  margin-bottom: 1.05rem;
+  /* 原本 1.5rem */
   letter-spacing: 0.01em;
 }
 
@@ -700,7 +737,8 @@ h2 {
 }
 
 .article-note {
-  background-color: rgba(243, 236, 220, 0.9); /* 關鍵：0.9 以上 */
+  background-color: rgba(243, 236, 220, 0.9);
+  /* 關鍵：0.9 以上 */
   border-radius: 10px;
   padding: 1.6rem 1.8rem;
   color: rgba(59, 47, 47, 0.6);
@@ -867,7 +905,8 @@ footer a:hover {
   display: none;
   position: fixed;
   z-index: 1001;
-  inset: 0;                 /* 等同 left:0; top:0; width:100%; height:100% */
+  inset: 0;
+  /* 等同 left:0; top:0; width:100%; height:100% */
   background-color: rgba(59, 47, 47, 0.7);
   backdrop-filter: blur(5px);
 
@@ -875,7 +914,8 @@ footer a:hover {
   align-items: center;
   justify-content: center;
 
-  padding: 1rem;            /* 手機安全邊距 */
+  padding: 1rem;
+  /* 手機安全邊距 */
 }
 
 /* ✅ 打開時才變 flex */
@@ -888,7 +928,8 @@ footer a:hover {
   border-radius: 20px;
   width: 100%;
   max-width: 600px;
-  max-height: 90vh;     /* ✅ 手機不會頂到上下 */
+  max-height: 90vh;
+  /* ✅ 手機不會頂到上下 */
   overflow-y: auto;
 
   box-shadow: 0 20px 40px rgba(59, 47, 47, 0.2);
@@ -943,7 +984,7 @@ footer a:hover {
   font-size: 0.9rem;
   color: rgba(59, 47, 47, 0.7);
   margin-bottom: 0.8rem;
-  text-align: center;   
+  text-align: center;
 }
 
 /* 联絡方式容器 */
@@ -999,7 +1040,8 @@ footer a:hover {
 
 /* CTA 彈窗：Email 與 Line / IG 區塊之間增加留白 */
 .contact-modal .contact-methods-email {
-  margin-bottom: 1.5rem; /* 你可微調：1.5rem～2.5rem */
+  margin-bottom: 1.5rem;
+  /* 你可微調：1.5rem～2.5rem */
 }
 
 /* CTA 彈出視窗：移除 IG / LINE / Email 圖示背景 */
@@ -1250,6 +1292,7 @@ footer a:hover {
    13. Responsive Design - Mobile
    ===================================================== */
 @media (max-width: 768px) {
+
   /* ✅ 手機版：移除 header 的 fixed 定位 */
   header {
     position: static;
@@ -1276,14 +1319,14 @@ footer a:hover {
   .logo-text {
     font-size: 0.95rem;
   }
-   
-  .logo-text-zh {
-      font-size: 0.95rem;
 
-.logo-text-en {
-    font-size: 0.68rem;
+  .logo-text-zh {
+    font-size: 0.95rem;
+
+    .logo-text-en {
+      font-size: 0.68rem;
+    }
   }
-}
 
   nav ul {
     gap: 0.8rem;
@@ -1354,52 +1397,52 @@ footer a:hover {
     max-width: 100%;
     max-height: 85vh;
   }
-  
+
   .contact-modal {
     max-width: 100%;
     padding: 2rem;
   }
-  
+
   .contact-modal h2 {
     font-size: 1.6rem;
   }
-  
+
   .contact-item {
     padding: 1.2rem;
     gap: 1rem;
   }
-  
+
   .contact-icon {
     width: 45px;
     height: 45px;
     font-size: 1.5rem;
   }
-  
+
   .contact-info h3 {
     font-size: 1rem;
   }
-  
+
   .contact-link,
   .line-id,
   .instagram-id {
     font-size: 0.9rem;
   }
-  
+
   .qr-codes-container {
     gap: 1.5rem;
   }
-  
+
   .qr-code-img {
     width: 130px;
     height: 130px;
   }
-  
+
   .instagram-join-link,
   .line-join-link {
     font-size: 0.8rem;
     padding: 0.35rem 0.8rem;
   }
-  
+
   .modal-close-btn {
     top: 1rem;
     right: 1rem;
@@ -1426,8 +1469,10 @@ footer a:hover {
 /* ===== Article Hero - Mobile 修正 ===== */
 @media (max-width: 768px) {
   .article-hero {
-    padding-top: 3.5rem;   /* 原本 10rem → 縮掉 */
-    padding-bottom: 4rem;  /* 保留呼吸感 */
+    padding-top: 3.5rem;
+    /* 原本 10rem → 縮掉 */
+    padding-bottom: 4rem;
+    /* 保留呼吸感 */
   }
 }
 
@@ -1459,12 +1504,10 @@ footer a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(59, 47, 47, 0.25) 0%,
-    rgba(59, 47, 47, 0.45) 55%,
-    rgba(59, 47, 47, 0.70) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(59, 47, 47, 0.25) 0%,
+      rgba(59, 47, 47, 0.45) 55%,
+      rgba(59, 47, 47, 0.70) 100%);
   z-index: 0;
 }
 
@@ -1536,12 +1579,10 @@ footer a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(18, 22, 18, 0.30) 0%,
-    rgba(18, 22, 18, 0.46) 55%,
-    rgba(18, 22, 18, 0.70) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(18, 22, 18, 0.30) 0%,
+      rgba(18, 22, 18, 0.46) 55%,
+      rgba(18, 22, 18, 0.70) 100%);
   z-index: 0;
 }
 
@@ -1613,12 +1654,10 @@ footer a:hover {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(59, 47, 47, 0.18) 0%,
-    rgba(59, 47, 47, 0.32) 55%,
-    rgba(59, 47, 47, 0.55) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(59, 47, 47, 0.18) 0%,
+      rgba(59, 47, 47, 0.32) 55%,
+      rgba(59, 47, 47, 0.55) 100%);
   z-index: 0;
 }
 
@@ -1709,8 +1748,10 @@ footer a:hover {
 
 /* ===== 文章主容器（✅單欄） ===== */
 .article-container {
-  display: block;     /* ✅ 不再使用左右兩欄 grid */
-  max-width: 900px;   /* ✅ 雜誌版心：可微調 820~980 */
+  display: block;
+  /* ✅ 不再使用左右兩欄 grid */
+  max-width: 900px;
+  /* ✅ 雜誌版心：可微調 820~980 */
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -1845,22 +1886,26 @@ footer a:hover {
 /* h4：條列細項（● 開頭） */
 .article-content h4 {
   font-family: 'Noto Sans TC', sans-serif;
-  font-size: 1.05rem;        /* 比 h3 小 */
+  font-size: 1.05rem;
+  /* 比 h3 小 */
   margin: 1.4rem 0 0.4rem;
-  margin-left: 1.5rem;      /* 整體往右 */
-  padding-left: 0.8rem;     /* ● 與文字的間距 */
+  margin-left: 1.5rem;
+  /* 整體往右 */
+  padding-left: 0.8rem;
+  /* ● 與文字的間距 */
   color: rgba(59, 47, 47, 0.9);
 }
 
 /* ⭐ h4 後面的文字內容：對齊 ● 後第一個字 */
-.article-content h4 + p {
+.article-content h4+p {
   margin-left: calc(1.5rem + 0.8rem);
 }
 
 /* ===== 文章頁 Breadcrumb 連結顏色鎖定 ===== */
 .article-breadcrumb a,
 .article-breadcrumb a:visited {
-  color: inherit;       /* 永遠跟父層一樣 */
+  color: inherit;
+  /* 永遠跟父層一樣 */
   text-decoration: none;
 }
 
@@ -1997,7 +2042,8 @@ footer a:hover {
   box-shadow: var(--shadow);
   transition: var(--transition);
   border: 1px solid rgba(184, 92, 56, 0.1);
-  text-decoration: none; /* ✅ 支援整卡為 <a> */
+  text-decoration: none;
+  /* ✅ 支援整卡為 <a> */
   color: inherit;
   display: block;
 }
@@ -2049,6 +2095,7 @@ footer a:hover {
   .article-container {
     padding: 3.5rem 1.75rem;
   }
+
   .related-articles-grid {
     grid-template-columns: 1fr;
   }
@@ -2082,23 +2129,25 @@ footer a:hover {
     text-align: left;
   }
 
-/* ================================
+  /* ================================
    Mobile – 延伸閱讀（你可能也想看）
    ================================ */
-.related-article-card h4 {
-  text-align: left;        /* 明確保持左對齊（不置中） */
-  line-height: 1.5;
-}
+  .related-article-card h4 {
+    text-align: left;
+    /* 明確保持左對齊（不置中） */
+    line-height: 1.5;
+  }
 
-.related-article-card p {
-  font-size: 0.95rem;      /* 手機閱讀更舒服 */
-}
+  .related-article-card p {
+    font-size: 0.95rem;
+    /* 手機閱讀更舒服 */
+  }
 
-/* （可選）增加一點編輯感，不影響點擊 */
-.related-article-card h4::before {
-  content: '— ';
-  color: rgba(184, 92, 56, 0.6);
-}
+  /* （可選）增加一點編輯感，不影響點擊 */
+  .related-article-card h4::before {
+    content: '— ';
+    color: rgba(184, 92, 56, 0.6);
+  }
 
   .article-toc,
   .toc-container {
@@ -2146,7 +2195,8 @@ footer a:hover {
    ========================= */
 @media (max-width: 768px) {
   .page-article .article-meta {
-    align-items: center;   /* ← 關鍵 */
+    align-items: center;
+    /* ← 關鍵 */
     text-align: center;
   }
 
@@ -2224,7 +2274,8 @@ footer a:hover {
   border-left: 4px solid rgba(184, 92, 56, 0.75);
   border: 1px solid rgba(184, 92, 56, 0.14);
   box-shadow: 0 14px 34px rgba(59, 47, 47, 0.08);
-  margin: 2.3rem 0 1.8rem; /* 上：和內文分隔；下：留給圖片呼吸 */
+  margin: 2.3rem 0 1.8rem;
+  /* 上：和內文分隔；下：留給圖片呼吸 */
 }
 
 .safari-note__title {
@@ -2318,3 +2369,80 @@ footer a:hover {
   border-bottom-color: rgba(184, 92, 56, 0.7);
 }
 
+/* ==============================================
+   Article Related Cards (你可能也想看)
+   ============================================== */
+.article-related {
+  margin: 3rem 0 2rem;
+}
+
+.article-related h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.related-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.related-article-card {
+  display: block;
+  text-decoration: none;
+  background-color: rgba(250, 248, 243, 0.6);
+  border-radius: 12px;
+  padding: 1.8rem 2rem;
+  border: 1px solid rgba(184, 92, 56, 0.12);
+  transition: all 0.3s ease;
+}
+
+.related-article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(59, 47, 47, 0.08);
+  border-color: rgba(184, 92, 56, 0.25);
+}
+
+.related-article-card h4 {
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-brown);
+  margin: 0 0 0.8rem 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.related-article-card p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: rgba(59, 47, 47, 0.75);
+  margin: 0 0 1.2rem 0;
+  padding: 0;
+}
+
+.related-article-card .card-cta {
+  display: block;
+  color: var(--terra-red);
+  font-weight: 500;
+  font-size: 0.92rem;
+  margin: 0;
+  padding: 0;
+}
+
+.related-article-card:hover .card-cta {
+  transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+  .related-articles-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .related-article-card {
+    padding: 1.5rem 1.6rem;
+  }
+}
