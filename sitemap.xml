@@ -5,10 +5,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://africatravelinstitute.org/index.html</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://africatravelinstitute.org/about.html</loc>
     <priority>0.8</priority>
   </url>
@@ -30,6 +26,14 @@
   </url>
   <url>
     <loc>https://africatravelinstitute.org/articles/TZ_article_03.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://africatravelinstitute.org/articles/TZ_article_04.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://africatravelinstitute.org/articles/TZ_article_05.html</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
