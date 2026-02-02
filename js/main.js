@@ -57,7 +57,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // ============ 浮動 CTA 按鈕顯示 ============
 window.addEventListener('scroll', function() {
   const floatingCta = document.querySelector('.floating-cta');
-  const heroSection = document.querySelector('.hero');
+  // Support both main pages (.hero) and article pages (.article-hero)
+  const heroSection = document.querySelector('.hero, .article-hero');
 
   if (!floatingCta || !heroSection) return;
 
