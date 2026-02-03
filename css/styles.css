@@ -938,6 +938,7 @@ footer a:hover {
 .modal-content h2 {
   margin-bottom: 1rem;
   font-size: 1.6rem;
+  text-align: center;
 }
 
 .modal-content p {
@@ -978,6 +979,7 @@ footer a:hover {
   font-size: 1.6rem;
   color: var(--dark-brown);
   margin-bottom: 0.4rem;
+  text-align: center;
 }
 
 .contact-intro {
@@ -2580,7 +2582,6 @@ footer a:hover {
   color: var(--dark-brown);
   margin-bottom: 0.75rem;
   text-align: center;
-  padding-right: 2rem;
 }
 
 .contact-intro {
