@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5QZ8626XV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-C5QZ8626XV');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="專為你設計的坦尚尼亞 Safari。實地經驗、透明費用、全程陪伴。從諮詢到出發，讓每個決定都踏實。">
+    <title>坦尚尼亞 Safari 行程諮詢｜客製化遊獵規劃</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo_icon_only.svg">
+    <link rel="apple-touch-icon" href="images/logo_icon_only.svg">
+    <link rel="canonical" href="https://africatravelinstitute.org/tanzania-landing.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://africatravelinstitute.org/tanzania-landing.html">
+    <meta property="og:title" content="坦尚尼亞 Safari 行程諮詢｜客製化遊獵規劃">
+    <meta property="og:description" content="一個週末的準備，換來一生難忘的草原記憶。實地經驗、透明費用、全程陪伴。">
+    <meta property="og:image" content="https://africatravelinstitute.org/images/tanzania-landing-hero.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://africatravelinstitute.org/tanzania-landing.html">
+    <meta property="twitter:title" content="坦尚尼亞 Safari 行程諮詢｜客製化遊獵規劃">
+    <meta property="twitter:description" content="一個週末的準備，換來一生難忘的草原記憶。實地經驗、透明費用、全程陪伴。">
+    <meta property="twitter:image" content="https://africatravelinstitute.org/images/tanzania-landing-hero.jpg">
+
+    <!-- 結構化資料 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "非洲旅遊研究所",
+      "alternateName": "Africa Travel Institute (ATI)",
+      "url": "https://africatravelinstitute.org",
+      "logo": "https://africatravelinstitute.org/images/logo_search.png"
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Landing Page 專屬樣式 */
+
+        /* Hero Section - 使用背景圖 */
+        .hero--landing {
+            background-image: url('images/tanzania-landing-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 12rem 2rem 6rem;
+            position: relative;
+        }
+
+        .hero--landing:before {
+            background: radial-gradient(circle, rgba(250, 248, 243, 0.08) 0%, transparent 65%);
+        }
+
+        .hero--landing:after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                    rgba(59, 47, 47, 0.25) 0%,
+                    rgba(59, 47, 47, 0.45) 55%,
+                    rgba(59, 47, 47, 0.60) 100%);
+            z-index: 0;
+        }
+
+        .hero--landing h1,
+        .hero--landing .hero-subtitle,
+        .hero--landing .hero-intro {
+            color: rgba(250, 248, 243, 0.98);
+            text-shadow: 0 12px 28px rgba(0, 0, 0, 0.30);
+        }
+
+        .hero--landing h1 {
+            font-size: 3.2rem;
+            line-height: 1.3;
+            margin-bottom: 1.8rem;
+        }
+
+        .hero--landing .hero-subtitle {
+            font-size: 1.35rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero--landing .hero-intro {
+            font-size: 1.12rem;
+            max-width: 680px;
+            line-height: 2.1;
+            margin-bottom: 3rem;
+        }
+
+        /* Landing Hero CTA */
+        .hero-cta {
+            margin-top: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-cta .cta-button {
+            font-size: 1.15rem;
+            padding: 1rem 2.8rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .hero-cta .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.30);
+        }
+
+        /* Why Choose Us Section */
+        .why-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--sand) 100%);
+        }
+
+        .why-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        .why-item {
+            background: rgba(250, 248, 243, 0.95);
+            border-radius: 20px;
+            padding: 2.5rem;
+            border: 1px solid rgba(184, 92, 56, 0.12);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .why-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--terra-red), var(--terra-orange));
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .why-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .why-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+            border-color: rgba(184, 92, 56, 0.25);
+        }
+
+        .why-item h3 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 1.4rem;
+            color: var(--terra-red);
+            margin-bottom: 1rem;
+        }
+
+        .why-item p {
+            font-size: 1.05rem;
+            line-height: 1.95;
+            color: rgba(59, 47, 47, 0.85);
+            margin: 0;
+        }
+
+        /* Section Subtitle */
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1rem;
+            color: rgba(59, 47, 47, 0.7);
+            margin: 1rem 0 0;
+        }
+
+        /* Why Icon */
+        .why-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+        }
+
+        /* Why Question Area */
+        .why-question {
+            background: rgba(184, 92, 56, 0.06);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .why-question p {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: rgba(59, 47, 47, 0.8);
+            margin-bottom: 0.8rem;
+        }
+
+        .why-question p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Why Solution Area */
+        .why-solution {
+            background: linear-gradient(135deg, rgba(243, 236, 220, 0.5) 0%, rgba(250, 248, 243, 0.3) 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1.5px dashed rgba(141, 85, 48, 0.25);
+        }
+
+        .solution-title {
+            font-weight: 650;
+            font-size: 1.1rem;
+            color: var(--terra-red);
+            margin-bottom: 1rem;
+            font-family: 'Noto Serif TC', serif;
+        }
+
+        .why-solution p {
+            font-size: 1.02rem;
+            line-height: 1.85;
+            color: rgba(59, 47, 47, 0.85);
+            margin-bottom: 0.8rem;
+        }
+
+        .why-solution p:last-child {
+            margin-bottom: 0;
+        }
+
+        .solution-result {
+            font-weight: 500;
+            color: var(--terra-red);
+            font-size: 1.05rem;
+        }
+
+        /* Journey/Process Section */
+        .journey-section {
+            padding: 6rem 2rem;
+            background-color: var(--warm-white);
+        }
+
+        .journey-container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .journey-steps {
+            margin-top: 3.5rem;
+        }
+
+        .journey-step {
+            padding: 2rem 0 2.2rem;
+            border-top: 1px solid rgba(92, 66, 48, 0.15);
+        }
+
+        .journey-step:first-child {
+            border-top: 0;
+            padding-top: 0.5rem;
+        }
+
+        .journey-head {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            gap: 1.2rem;
+            align-items: baseline;
+            margin-bottom: 0.9rem;
+        }
+
+        .journey-num {
+            width: 44px;
+            height: 44px;
+            border-radius: 999px;
+            display: grid;
+            place-items: center;
+            font-weight: 650;
+            font-size: 1.1rem;
+            color: rgba(141, 85, 48, 0.95);
+            background: rgba(243, 236, 220, 0.65);
+            border: 1.5px solid rgba(141, 85, 48, 0.30);
+        }
+
+        .journey-title {
+            margin: 0;
+            font-family: 'Noto Serif TC', serif;
+            font-size: 1.38rem;
+            line-height: 1.3;
+            font-weight: 650;
+            color: var(--terra-red);
+            letter-spacing: 0.01em;
+        }
+
+        .journey-text {
+            margin: 0;
+            font-size: 1.08rem;
+            line-height: 2.05;
+            color: rgba(59, 47, 47, 0.88);
+        }
+
+        /* Compact CTA Section */
+        .compact-cta-section {
+            position: relative;
+            padding: 5rem 2rem;
+            background-image: url('images/tanzania-hero-desktop.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+        .compact-cta-section::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg,
+                    rgba(59, 47, 47, 0.75) 0%,
+                    rgba(141, 85, 48, 0.65) 50%,
+                    rgba(59, 47, 47, 0.75) 100%);
+            z-index: 0;
+        }
+
+        .compact-cta-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .compact-cta-section h2 {
+            color: var(--warm-white);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .compact-cta-section .cta-description {
+            color: rgba(250, 248, 243, 0.92);
+            font-size: 1.08rem;
+            line-height: 1.9;
+            margin-bottom: 2rem;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        }
+
+        .compact-cta-section .cta-button {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .compact-cta-section .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Brand Introduction Section */
+        .brand-intro-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--sand) 100%);
+        }
+
+        .brand-intro-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .brand-intro-image-wrapper {
+            position: relative;
+            max-width: 400px;
+            margin: 0 auto 3rem;
+        }
+
+        .brand-intro-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(184, 92, 56, 0.2);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-intro-content {
+            padding: 0;
+        }
+
+        .brand-intro-title {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 2rem;
+            color: var(--terra-red);
+            margin-bottom: 1.5rem;
+            line-height: 1.4;
+            font-weight: 650;
+            text-align: center;
+        }
+
+        .brand-intro-text {
+            font-size: 1.08rem;
+            line-height: 2.05;
+            color: rgba(59, 47, 47, 0.88);
+            margin-bottom: 2rem;
+            white-space: pre-line;
+            text-align: center;
+        }
+
+        .brand-intro-signature {
+            margin: 2rem 0;
+        }
+
+        .brand-intro-signature img {
+            height: 60px;
+            opacity: 0.75;
+        }
+
+        .brand-intro-credentials {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(184, 92, 56, 0.15);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .brand-intro-credentials h3 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 1.2rem;
+            color: var(--terra-red);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .brand-intro-credentials ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            display: inline-block;
+        }
+
+        .brand-intro-credentials li {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: rgba(59, 47, 47, 0.85);
+            padding-left: 1.5rem;
+            position: relative;
+            margin-bottom: 0.5rem;
+        }
+
+        .brand-intro-credentials li:before {
+            content: '●';
+            position: absolute;
+            left: 0;
+            color: var(--terra-red);
+            font-size: 0.8rem;
+        }
+
+        /* Highlights Section */
+        .highlights-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--warm-white) 0%, var(--sand) 100%);
+        }
+
+        .highlights-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .highlights-intro {
+            font-size: 1.1rem;
+            line-height: 2;
+            color: rgba(59, 47, 47, 0.75);
+            margin: 1.5rem 0 3.5rem;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .highlight-card {
+            background: rgba(250, 248, 243, 0.9);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: left;
+            border: 1px solid rgba(184, 92, 56, 0.12);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+            border-color: rgba(184, 92, 56, 0.25);
+        }
+
+        .highlight-tag {
+            display: inline-block;
+            font-size: 0.9rem;
+            color: rgba(141, 85, 48, 0.9);
+            background: rgba(243, 236, 220, 0.7);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        .highlight-card h3 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 1.3rem;
+            color: var(--terra-red);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .highlight-description {
+            font-size: 1.05rem;
+            line-height: 1.9;
+            color: rgba(59, 47, 47, 0.85);
+            margin: 0;
+        }
+
+        .highlight-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            padding: 6rem 2rem;
+            background-color: var(--warm-white);
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3.5rem;
+        }
+
+        .testimonial-card {
+            background: rgba(250, 248, 243, 0.6);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: left;
+            border: 1px solid rgba(184, 92, 56, 0.12);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            border-color: rgba(184, 92, 56, 0.20);
+        }
+
+        .testimonial-stars {
+            color: var(--terra-red);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            font-size: 0.98rem;
+            line-height: 1.85;
+            color: rgba(59, 47, 47, 0.85);
+            margin: 0;
+        }
+
+        /* Trust/Credentials Section */
+        .trust-section {
+            padding: 6rem 2rem;
+            background: linear-gradient(135deg, var(--sand) 0%, var(--warm-white) 100%);
+        }
+
+        .trust-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .trust-text {
+            font-size: 1.12rem;
+            line-height: 2.2;
+            color: rgba(59, 47, 47, 0.88);
+            margin: 2.5rem 0 3rem;
+            white-space: pre-line;
+        }
+
+        .credentials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .credential-item {
+            background: rgba(250, 248, 243, 0.7);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(184, 92, 56, 0.15);
+            font-size: 1.05rem;
+            color: rgba(59, 47, 47, 0.85);
+        }
+
+        /* Final CTA Section */
+        .final-cta-section {
+            padding: 6rem 2rem;
+            background-color: var(--dark-brown);
+            text-align: center;
+            color: var(--warm-white);
+        }
+
+        .final-cta-section h2 {
+            color: var(--warm-white);
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .final-cta-section .transition-text {
+            color: rgba(250, 248, 243, 0.82);
+            margin-bottom: 3rem;
+            font-size: 1.08rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+
+        .final-cta-note {
+            font-size: 0.95rem;
+            color: rgba(250, 248, 243, 0.65);
+            font-style: italic;
+            line-height: 1.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero--landing {
+                min-height: 75vh;
+                padding: 10rem 1.5rem 5rem;
+            }
+
+            .hero--landing h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero--landing .hero-subtitle {
+                font-size: 1.15rem;
+            }
+
+            .hero--landing .hero-intro {
+                font-size: 1.05rem;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+                gap: 1.8rem;
+            }
+
+            .why-item {
+                padding: 2rem;
+            }
+
+            .why-icon {
+                font-size: 3rem;
+            }
+
+            .compact-cta-section {
+                padding: 4rem 1.5rem;
+            }
+
+            .compact-cta-section h2 {
+                font-size: 1.6rem;
+            }
+
+            .compact-cta-section .cta-description {
+                font-size: 1.02rem;
+            }
+
+            .journey-head {
+                grid-template-columns: 1fr;
+                gap: 0.6rem;
+            }
+
+            .journey-num {
+                width: 38px;
+                height: 38px;
+                font-size: 1rem;
+            }
+
+            .journey-title {
+                font-size: 1.22rem;
+            }
+
+            .highlights-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .credentials-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons .cta-button {
+                width: 100%;
+                max-width: 320px;
+            }
+
+            .brand-intro-image-wrapper {
+                max-width: 280px;
+                margin-bottom: 2rem;
+            }
+
+            .brand-intro-title {
+                font-size: 1.6rem;
+            }
+
+            .brand-intro-text {
+                font-size: 1.05rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="images/logo_icon_only.svg" alt="非洲旅遊研究所" class="logo-img">
+
+                <span class="logo-text-group">
+                    <span class="logo-text-zh">非洲旅遊研究所</span>
+                    <span class="logo-text-en">Africa Travel Institute (ATI)</span>
+                </span>
+            </a>
+            <ul>
+                <li><a href="tanzania.html">坦尚尼亞</a></li>
+                <li><a href="uganda.html">烏干達</a></li>
+                <li><a href="about.html">關於我們</a></li>
+                <li>
+                    <a href="#" class="cta-link cta-button cta-button-outline">
+                        行程諮詢
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero--landing">
+        <h1>坦尚尼亞 Safari<br>一個週末的準備，換來一生難忘的草原記憶</h1>
+        <div class="hero-subtitle">
+            不只是看動物，而是重新找回內心的遼闊與平靜
+        </div>
+        <p class="hero-intro">
+            我們走過這條路，也想陪你走一次。<br>
+            從第一次諮詢到站上草原，讓每個決定都踏實、每個瞬間都值得。
+        </p>
+        <div class="hero-cta">
+            <a href="#" class="cta-link cta-button">立即諮詢</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-section">
+        <div class="why-container">
+            <h2>你是不是有這些困擾？</h2>
+            <p class="section-subtitle">別擔心，這些都是每個想去非洲的人會有的疑問</p>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <h3>不知道從哪裡開始</h3>
+                    <div class="why-question">
+                        <p>我要看動物大遷徙，應該去肯亞還是坦尚尼亞？</p>
+                        <p>要待幾天、住哪裡、怎麼安排才順？</p>
+                    </div>
+                    <div class="why-solution">
+                        <div class="solution-title">💡 我們的解法</div>
+                        <p><strong>用「10 分鐘對話」先搞清楚你想要的</strong>：看動物、拍照、蜜月、親子，或只是想被大自然安靜地抱一下。</p>
+                        <p class="solution-result">→ 你會得到一份清楚的方向與「專屬客製」的行程骨架。</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <h3>怕踩雷、怕被當盤子</h3>
+                    <div class="why-question">
+                        <p>去非洲是不是很貴？聽說要台幣二、三十萬？</p>
+                        <p>市面上都是套裝行程，我都不知道錢花在哪裡？</p>
+                    </div>
+                    <div class="why-solution">
+                        <div class="solution-title">💡 我們的解法</div>
+                        <p><strong>用透明拆解，公開費用結構</strong> (交通、住宿、門票、小費)，讓你看懂每一分錢。</p>
+                        <p class="solution-result">→ 告訴你為什麼貴、也告訴你「哪裡能省」。客製化你的行程，十幾萬就能很精彩！</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <h3>行程想舒服，不想趕</h3>
+                    <div class="why-question">
+                        <p>非洲旅遊會不會很克難？沒水沒電、沒有Wi-Fi？</p>
+                        <p>行程會不會很緊湊，沒有休息的時間？</p>
+                    </div>
+                    <div class="why-solution">
+                        <div class="solution-title">💡 我們的解法</div>
+                        <p><strong>我們擅長「留白」</strong>：該追動物時追、該休息時休息。</p>
+                        <p class="solution-result">→ 在我們精選的住宿裡，你可以放鬆的享受非洲的寧靜與美好，也能透過社群媒體與家人朋友分享你的冒險。</p>
+                    </div>
+                </div>
+
+                <div class="why-item">
+                    <h3>全程陪伴，從出發到回家</h3>
+                    <div class="why-question">
+                        <p>行前要準備什麼東西？要打疫苗嗎？</p>
+                        <p>網路上好多當地旅行社，到底哪一家比較好？我好怕遇到詐騙!</p>
+                    </div>
+                    <div class="why-solution">
+                        <div class="solution-title">💡 我們的解法</div>
+                        <p>除了食衣住行，<strong>我們更在意「你會遇見誰」</strong>。</p>
+                        <p class="solution-result">→ 我們精選可靠的在地夥伴，親自考察過的那種，把安全放在第一位!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact CTA Section -->
+    <section class="compact-cta-section">
+        <div class="compact-cta-content">
+            <h2>我們是非洲旅遊的專家</h2>
+            <p class="cta-description">
+                只要你心裡有一個「想去看看」的念頭，其他的路線、節奏與細節，我們陪你慢慢走。
+            </p>
+            <a href="#" class="cta-link cta-button">立即諮詢</a>
+        </div>
+    </section>
+
+
+    <!-- Journey/Process Section -->
+    <section class="journey-section">
+        <div class="journey-container">
+            <h2>從諮詢到出發的旅程</h2>
+            <p class="transition-text">
+                我們用 5 個步驟，陪你把期待變成真實的草原記憶。
+            </p>
+
+            <div class="journey-steps">
+                <div class="journey-step">
+                    <div class="journey-head">
+                        <div class="journey-num">1</div>
+                        <h3 class="journey-title">初步諮詢與需求確認</h3>
+                    </div>
+                    <p class="journey-text">
+                        透過 Line、Email 或 Instagram，告訴我們你的時間、預算與期待。我們會先幫你釐清最適合的路線與季節。
+                    </p>
+                </div>
+
+                <div class="journey-step">
+                    <div class="journey-head">
+                        <div class="journey-num">2</div>
+                        <h3 class="journey-title">客製化行程設計</h3>
+                    </div>
+                    <p class="journey-text">
+                        根據你的需求，設計專屬路線並提供詳細費用拆解。包含國家公園選擇、住宿等級、交通方式的建議與比較。
+                    </p>
+                </div>
+
+                <div class="journey-step">
+                    <div class="journey-head">
+                        <div class="journey-num">3</div>
+                        <h3 class="journey-title">行程確認與預訂</h3>
+                    </div>
+                    <p class="journey-text">
+                        確認行程後，我們協助預訂住宿、車輛、機票等。所有預訂細節透明公開，讓你完全掌握。
+                    </p>
+                </div>
+
+                <div class="journey-step">
+                    <div class="journey-head">
+                        <div class="journey-num">4</div>
+                        <h3 class="journey-title">行前準備與支援</h3>
+                    </div>
+                    <p class="journey-text">
+                        提供完整的行前準備清單：簽證、疫苗、打包建議、攝影器材等。同時提供當地聯絡方式與緊急支援。
+                    </p>
+                </div>
+
+                <div class="journey-step">
+                    <div class="journey-head">
+                        <div class="journey-num">5</div>
+                        <h3 class="journey-title">站上草原，開始你的旅程</h3>
+                    </div>
+                    <p class="journey-text">
+                        當你站在塞倫蓋提的黃昏裡，你會知道，這些準備都是值得的! 我們會一路陪著你，直到你安全到家。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compact CTA Section -->
+    <section class="compact-cta-section">
+        <div class="compact-cta-content">
+            <h2>我們是非洲旅遊的專家</h2>
+            <p class="cta-description">
+                細節上，我們從不妥協。安全上，我們近乎苛求!
+            </p>
+            <a href="#" class="cta-link cta-button">立即諮詢</a>
+        </div>
+    </section>
+
+    <!-- Brand Introduction Section -->
+    <section class="brand-intro-section">
+        <div class="brand-intro-container">
+            <div class="brand-intro-image-wrapper">
+                <img src="images/brand-intro.png" alt="非洲旅遊研究所" class="brand-intro-image">
+            </div>
+
+            <div class="brand-intro-content">
+                <h2 class="brand-intro-title">把風險想在前面，是一種習慣</h2>
+
+                <p class="brand-intro-text">
+                    非洲旅遊研究所的成立，來自一個很簡單的信念：遠行不該只追求刺激，而應該被細心對待。<br>
+                    創辦人本身來自<strong>醫療背景</strong>，長期習慣在高風險環境中做決策。這也形塑了我們看待旅程的方式——對細節保持高度敏感，對節奏有耐心，對安全近乎苛求。<br>
+                    我們不追求「看最多」，而是在對的時間停下來；不把旅程塞滿，而是留白，讓感受自然發生。<br>
+                    <strong>我們用醫療等級的謹慎，設計一趟能安心享受的非洲旅程。</strong><br>
+                    從細節、節奏到安全，每一步都經過深思熟慮，只為讓你在很遠的地方，也能放鬆地走得很遠。
+                </p>
+
+                <div class="brand-intro-credentials">
+                    <h3>非洲旅遊研究所</h3>
+                    <ul>
+                        <li>實地考察塞倫蓋提、恩戈羅恩戈羅等國家公園</li>
+                        <li>只與經驗豐富的當地旅遊團隊合作</li>
+                        <li>擅長量身訂做適合不同顧客的非洲旅遊行程</li>
+                        <li>行程規劃以安全為優先，所有細節皆經過審慎評估</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights-section">
+        <div class="highlights-container">
+            <h2>旅程中可能遇見的瞬間</h2>
+            <p class="highlights-intro">
+                這不是行程表,而是草原上可能發生的片刻。<br>
+                每個旅程的節奏都不同,這些只是我們想陪你慢慢走向的風景。
+            </p>
+
+            <div class="highlights-grid">
+                <!-- Highlight Card 1 -->
+                <div class="highlight-card">
+                    <div class="highlight-tag">塞倫蓋提 · 清晨</div>
+                    <img src="images/highlights/serengeti-morning.jpg" alt="塞倫蓋提清晨的長頸鹿" class="highlight-image">
+                    <h3>在動物還沒醒來之前,先醒來</h3>
+                    <p class="highlight-description">
+                        天還沒全亮,車子已經在草原上緩緩前行。與我們同行的，是遠方那群同樣早起的長頸鹿們。<br>
+                        有時候什麼也不會發生，但那種安靜本身，就值得你早起。
+                    </p>
+                </div>
+
+                <!-- Highlight Card 2 -->
+                <div class="highlight-card">
+                    <div class="highlight-tag">恩戈羅恩戈羅 · 午後</div>
+                    <img src="images/highlights/ngorongoro-lions.jpg" alt="恩戈羅恩戈羅火山口的獅子家族" class="highlight-image">
+                    <h3>停下來,就為了看一隻獅子發呆</h3>
+                    <p class="highlight-description">
+                        牠可能什麼也不做,只是躺在樹蔭下,尾巴偶爾甩一下。
+                        你不趕時間,嚮導也不催你,於是你們就這樣靜靜地看著牠。
+                        後來你會發現,這種「什麼也不用做」的時刻,才是旅程裡最珍貴的部分。
+                    </p>
+                </div>
+
+                <!-- Highlight Card 3 -->
+                <div class="highlight-card">
+                    <div class="highlight-tag">營地 · 日落時分</div>
+                    <img src="images/highlights/camp-sunset.jpg" alt="營地日落時分的篝火與大象" class="highlight-image">
+                    <h3>草原的黃昏,和你想的不一樣</h3>
+                    <p class="highlight-description">
+                        不是那種刻意安排的觀景點,而是回營地的路上,司機突然停車,指著遠方說:「你看。」
+                        天空開始從金色變成橘紅,草原在光線裡變得很柔軟。
+                        那一刻你不會想拍照,只想好好記住這個畫面。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="compact-cta-section">
+        <div class="compact-cta-content">
+            <h2>我們是非洲旅遊的專家</h2>
+            <p class="cta-description">
+                有些地方，不是為了讓你去看，而是讓你重新感覺自己還活著。
+            </p>
+            <a href="#" class="cta-link cta-button">立即諮詢</a>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2>他們走過的路</h2>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial Card 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">◆◆◆◆◆</div>
+                    <p class="testimonial-text">
+                        「他們真的把每個細節想得很清楚，也願意花時間解釋「為什麼這樣安排」。旅程中沒有需要我擔心的時刻，這就是最大的價值。」 — 吳先生 (桃園市/蜜月旅行)
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">◆◆◆◆◆</div>
+                    <p class="testimonial-text">
+                        「有些畫面，我到現在還會想起來。清晨的霧、車窗外的風聲、還有那幾隻樹下乘涼的獅子。這趟旅程沒有被塞滿，卻讓人感覺很完整。」 — 許先生
+                        (高雄市/家庭旅遊)
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">◆◆◆◆◆</div>
+                    <p class="testimonial-text">
+                        「老實說，出發前我真的很緊張。謝謝非洲旅遊研究所，他們帶著我，把未知變成可以理解的事情。到了當地，我只需要好好看風景，其他都有人照顧好。<br>
+                        如果是第一次去非洲，我會很推薦這樣的方式。」 — Janice (南投縣/第一次非洲旅遊)
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">◆◆◆◆◆</div>
+                    <p class="testimonial-text">
+                        「我們不是一直在追動物。很多時候只是停著，看牠們發呆、走過、消失。那種節奏，反而讓我拍到很多自己很喜歡的畫面。<br>
+                        如果你喜歡攝影，這樣的旅程會很適合你。」 — 財哥 (台中市/攝影愛好者)
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">◆◆◆◆◆</div>
+                    <p class="testimonial-text">
+                        「分手後，我來到了這裡。不是為了忘記誰，而是想在很大的世界裡，慢慢把自己找回來。<br>
+                        這趟旅程，讓我重新把注意力放回到自己身上。」 — Alice (新北市/單獨旅遊)
+                    </p>
+                </div>
+
+                <!-- Testimonial Card 6 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">◆◆◆◆◆</div>
+                    <p class="testimonial-text">
+                        「一開始我其實很猶豫要不要帶孩子來。後來整個旅程的節奏讓我很安心。沒有一直趕路，也不需要孩子硬撐。<br>
+                        我印象最深的是某個傍晚，兒子突然指著遠方說：「牠們在回家」。那一刻，我真的很慶幸，慶幸能和他一起看到生命該有的樣子。」 — 龔先生 (台北市/給兒子的畢業旅行)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust/Credentials Section -->
+    <section class="trust-section">
+        <div class="trust-container">
+            <h2>我們不只是非洲旅遊的專家，更是與你並肩同行的旅伴</h2>
+
+            <p class="trust-text">Safari 不是打卡景點的集合，而是需要時間沉澱的體驗。
+
+                我們不追求快速成交，而是花時間理解每位旅客的期待。
+                我們不販售罐頭行程，因為每個人想在草原上遇見的，都不一樣。
+
+                這是一條比較慢的路，但唯有這樣，
+                才能在你站上草原時，確定這就是你真正想要的旅程。</p>
+
+            <div class="route-cta">
+                <a href="#" class="cta-link cta-button">
+                    立即諮詢行程
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="footer-tagline">把走過的路，留一盞燈，陪你慢慢走向非洲</p>
+        <p class="footer-links">
+            <a href="index.html">首頁</a> ·
+            <a href="tanzania.html">坦尚尼亞</a> ·
+            <a href="uganda.html">烏干達</a> ·
+            <a href="about.html">關於我們</a>
+        </p>
+        <p class="footer-copyright">© 2026 非洲旅遊研究所</p>
+    </footer>
+
+    <button class="floating-cta">行程諮詢</button>
+
+    <div id="ctaModal" class="modal">
+        <div class="modal-content contact-modal">
+            <button class="modal-close-btn" onclick="closeModal()">×</button>
+            <h2>聯絡我們</h2>
+            <p class="contact-intro">歡迎透過以下方式與我們聯繫</p>
+
+            <!-- Email 聯絡方式 (單獨在上面) -->
+            <div class="contact-methods-email">
+                <div class="contact-item-horizontal email-item">
+                    <div class="contact-icon email-icon">✉</div>
+                    <div class="contact-info-horizontal">
+                        <h3>電子郵件</h3>
+                        <a href="mailto:safariafricaati@gmail.com" class="contact-link">safariafricaati@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Line 和 Instagram 聯絡方式 (並排) -->
+            <div class="contact-methods-horizontal">
+                <!-- Line 聯絡方式 -->
+                <div class="contact-item-horizontal line-item">
+                    <div class="contact-icon line-icon">
+                        <img src="images/Line_logo.svg" alt="LINE" class="line-logo">
+                    </div>
+
+                    <div class="contact-info-horizontal">
+                        <h3>Line 官方帳號</h3>
+
+                        <a href="https://line.me/R/ti/p/@920gpjml" target="_blank" class="line-join-link">點我加入</a>
+                    </div>
+                </div>
+
+                <!-- Instagram 聯絡方式 -->
+                <div class="contact-item-horizontal instagram-item">
+                    <div class="contact-icon instagram-icon">
+                        <img src="images/Instagram_Glyph_Gradient.svg" alt="Instagram" class="instagram-logo">
+                    </div>
+
+                    <div class="contact-info-horizontal">
+                        <h3>Instagram</h3>
+
+                        <a href="https://www.instagram.com/africa_travel_institute?igsh=c2RweXU1ZXdkOHJp&utm_source=ig_contact_invite"
+                            target="_blank" class="instagram-join-link">點我加入</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- QR Code 區域 -->
+            <div class="qr-code-section">
+                <p class="qr-label">掃描或點擊 QR Code</p>
+                <div class="qr-codes-container">
+                    <div class="qr-code-item">
+                        <p class="qr-code-label">Line</p>
+                        <a href="https://line.me/R/ti/p/@920gpjml" target="_blank" class="qr-code-link">
+                            <img src="images/line_QR_code.png" alt="Line 官方帳號 QR Code" class="qr-code-img">
+                        </a>
+                    </div>
+                    <div class="qr-code-item">
+                        <p class="qr-code-label">Instagram</p>
+                        <a href="https://www.instagram.com/africa_travel_institute?igsh=c2RweXU1ZXdkOHJp&utm_source=ig_contact_invite"
+                            target="_blank" class="qr-code-link">
+                            <img src="images/instagram_QR_code.png" alt="Instagram QR Code" class="qr-code-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -5,5 +5,5 @@
     "comments": false,
     "strings": false
   },
-  "editor.hover.enabled": false
+  "editor.hover.enabled": "off"
 }

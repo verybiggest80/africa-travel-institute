@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanzania Landing Page - 重新設計預覽</title>
+    <style>
+        body {
+            font-family: 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .preview-header {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .preview-header h1 {
+            margin: 0 0 15px;
+            color: #333;
+        }
+
+        .preview-header p {
+            margin: 0;
+            color: #666;
+            font-size: 16px;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .preview-section {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .preview-section h2 {
+            margin: 0 0 20px;
+            color: #333;
+            font-size: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .iframe-container {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            display: block;
+        }
+
+        .features {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features h2 {
+            margin: 0 0 20px;
+            color: #333;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+        }
+
+        .feature-item::before {
+            content: '✓';
+            color: #B85C38;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="preview-header">
+            <h1>🎨 Tanzania Landing Page - 區塊重新設計預覽</h1>
+            <p>「你是不是有這些困擾？」區塊已經重新設計，具有更現代、更吸引人的視覺效果</p>
+        </div>
+
+        <div class="features">
+            <h2>✨ 主要改進項目</h2>
+            <div class="feature-list">
+                <div class="feature-item">2x2 網格布局（桌面版）- 更好的空間利用</div>
+                <div class="feature-item">每個困擾點添加了視覺化圖標 (🧭💰🌅🤝)</div>
+                <div class="feature-item">問題區塊使用淡色背景區分</div>
+                <div class="feature-item">解決方案區塊使用虛線邊框和漸變背景突出顯示</div>
+                <div class="feature-item">卡片hover時顯示頂部漸變條動畫效果</div>
+                <div class="feature-item">更圓潤的卡片邊角 (20px)</div>
+                <div class="feature-item">更精緻的陰影和邊框設計</div>
+                <div class="feature-item">流暢的hover動畫效果</div>
+                <div class="feature-item">響應式設計 - 移動版自動切換為單列布局</div>
+                <div class="feature-item">添加了副標題增加親和力</div>
+            </div>
+        </div>
+
+        <div style="margin-top: 30px; text-align: center; padding: 20px; background: white; border-radius: 12px;">
+            <h2 style="margin-top: 0;">📱 查看完整頁面</h2>
+            <p style="color: #666; margin-bottom: 20px;">請在瀏覽器中打開以下文件來查看完整的重新設計效果：</p>
+            <code style="background: #f5f5f5; padding: 10px 20px; border-radius: 6px; display: inline-block;">
+                d:\非洲遊獵網站\Version Publish\africa-travel-institute\tanzania-landing.html
+            </code>
+            <p style="color: #666; margin-top: 20px; font-size: 14px;">
+                建議滾動到「你是不是有這些困擾？」區塊查看重新設計的效果
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
