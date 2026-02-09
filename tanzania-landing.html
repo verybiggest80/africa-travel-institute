@@ -714,6 +714,10 @@
                 text-align: center;
             }
 
+            .solution-title {
+                text-align: center;
+            }
+
             .why-icon {
                 font-size: 3rem;
             }
@@ -1049,9 +1053,9 @@
                     <img src="images/highlights/ngorongoro-lions.jpg" alt="恩戈羅恩戈羅火山口的獅子家族" class="highlight-image">
                     <h3>停下來,就為了看一隻獅子發呆</h3>
                     <p class="highlight-description">
-                        牠可能什麼也不做,只是躺在樹蔭下,尾巴偶爾甩一下。
-                        你不趕時間,嚮導也不催你,於是你們就這樣靜靜地看著牠。
-                        後來你會發現,這種「什麼也不用做」的時刻,才是旅程裡最珍貴的部分。
+                        兩隻母獅帶著兩隻小獅子，就這樣靜靜站著，眺望著遠方。
+                        這一瞬間，草原上沒有狩獵、沒有奔跑，只有一家人靜靜相依。
+                        你會明白，原來最動人的，不是獵殺的瞬間，而是這樣平凡的日常。
                     </p>
                 </div>
 
@@ -1061,9 +1065,9 @@
                     <img src="images/highlights/camp-sunset.jpg" alt="營地日落時分的篝火與大象" class="highlight-image">
                     <h3>草原的黃昏,和你想的不一樣</h3>
                     <p class="highlight-description">
-                        不是那種刻意安排的觀景點,而是回營地的路上,司機突然停車,指著遠方說:「你看。」
-                        天空開始從金色變成橘紅,草原在光線裡變得很柔軟。
-                        那一刻你不會想拍照,只想好好記住這個畫面。
+                        坐在營地的椅子上，篝火在眼前輕輕跳躍，你以為這就是黃昏的全部。
+                        直到一群大象，從樹林間緩步走來，就在不遠處停下，好像只是路過打個招呼。
+                        那一刻你才明白，這裡的日落，從來不需要刻意安排。
                     </p>
                 </div>
             </div>
@@ -1241,6 +1245,62 @@
             </div>
         </div>
     </div>
+
+    <script>
+        // 手機版輪播循環播放功能
+        (function () {
+            // 只在手機版執行
+            if (window.innerWidth <= 768) {
+                const grid = document.querySelector('.highlights-grid');
+                if (!grid) return;
+
+                const cards = Array.from(grid.querySelectorAll('.highlight-card'));
+                if (cards.length === 0) return;
+
+                // 複製第一張和最後一張卡片來實現循環
+                const firstClone = cards[0].cloneNode(true);
+                const lastClone = cards[cards.length - 1].cloneNode(true);
+
+                grid.appendChild(firstClone);
+                grid.insertBefore(lastClone, cards[0]);
+
+                // 初始位置設置在第一張真實卡片
+                const cardWidth = cards[0].offsetWidth;
+                const gap = 24; // 1.5rem = 24px
+                grid.scrollLeft = cardWidth + gap;
+
+                let isScrolling = false;
+
+                grid.addEventListener('scroll', function () {
+                    if (isScrolling) return;
+
+                    const maxScroll = grid.scrollWidth - grid.clientWidth;
+                    const currentScroll = grid.scrollLeft;
+
+                    // 滾動到克隆的最後一張（右邊界）
+                    if (currentScroll >= maxScroll - 10) {
+                        isScrolling = true;
+                        grid.style.scrollBehavior = 'auto';
+                        grid.scrollLeft = cardWidth + gap;
+                        setTimeout(() => {
+                            grid.style.scrollBehavior = 'smooth';
+                            isScrolling = false;
+                        }, 50);
+                    }
+                    // 滾動到克隆的第一張（左邊界）
+                    else if (currentScroll <= 10) {
+                        isScrolling = true;
+                        grid.style.scrollBehavior = 'auto';
+                        grid.scrollLeft = maxScroll - cardWidth - gap;
+                        setTimeout(() => {
+                            grid.style.scrollBehavior = 'smooth';
+                            isScrolling = false;
+                        }, 50);
+                    }
+                });
+            }
+        })();
+    </script>
 
     <script src="js/main.js"></script>
 </body>
