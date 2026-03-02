@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>10-Day Tanzania Safari Inquiry</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #b85c38;
+            padding-bottom: 20px;
+        }
+
+        .content {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #b85c38;
+            font-size: 24px;
+        }
+
+        h2 {
+            color: #5c6239;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        .placeholder {
+            color: #c0392b;
+            font-weight: bold;
+            background: #fadbd8;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #5c6239;
+            color: white;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Safaria Inquiry Template</h1>
+        <p>10-Day Deep Safari & Zanzibar (Tarangire, Ngorongoro, Serengeti, Zanzibar)</p>
+    </div>
+    <div class="content">
+        <p><strong>Subject:</strong> Inquiry for 10-Day Tanzania Safari & Zanzibar - <span class="placeholder">[你的名字]</span>
+        </p>
+        <p>Dear Safari Operator,</p>
+        <p>I am writing to inquire about a 10-day private safari and beach tour in Tanzania. I found your company highly
+            recommended and would like to request a quote based on the following details:</p>
+
+        <ul>
+            <li><strong>Travel Dates:</strong> From <span class="placeholder">[出發日期]</span> to <span
+                    class="placeholder">[結束日期]</span></li>
+            <li><strong>Number of Travelers:</strong> <span class="placeholder">[大人人數]</span> Adults, <span
+                    class="placeholder">[小孩人數(如有) 及年齡]</span></li>
+            <li><strong>Budget Level:</strong> <span class="placeholder">[Mid-range 中價位 / Luxury 奢華]</span>
+                Accommodation</li>
+        </ul>
+
+        <h2>Preferred Itinerary:</h2>
+        <ul class="itinerary-list">
+            <li><strong>Day 1:</strong> Arusha to Tarangire National Park (Afternoon game drive)</li>
+            <li><strong>Day 2:</strong> Tarangire National Park (Full day game drive)</li>
+            <li><strong>Day 3:</strong> Tarangire to Ngorongoro Conservation Area (Morning game drive, afternoon transfer)</li>
+            <li><strong>Day 4:</strong> Ngorongoro Crater (Full day crater tour with picnic lunch)</li>
+            <li><strong>Day 5:</strong> Ngorongoro to Serengeti National Park (Transfer and afternoon game drive)</li>
+            <li><strong>Day 6:</strong> Serengeti National Park (Full day game drive)</li>
+            <li><strong>Day 7:</strong> Serengeti National Park (Full day game drive)</li>
+            <li><strong>Day 8:</strong> Serengeti to Zanzibar (Flight to Zanzibar, afternoon at beach)</li>
+            <li><strong>Day 9:</strong> Zanzibar (Free day for optional activities)</li>
+            <li><strong>Day 10:</strong> Zanzibar to Departure (Morning at beach, afternoon departure)</li>
+        </ul>
+
+        <h2>Additional Questions:</h2>
+        <ul>
+            <li>Could you provide a detailed quote including accommodation, park fees, a 4x4 safari vehicle, and an
+                English-speaking guide?</li>
+            <li>Do you arrange the domestic flight from Serengeti to Zanzibar? If so, please include it in the quote.</li>
+            <li>Are airport transfers included in the price?</li>
+            <li>What is your payment and cancellation policy?</li>
+        </ul>
+
+        <p>Looking forward to hearing from you soon.</p>
+        <p>Best regards,<br><br><span class="placeholder">[你的名字]</span><br><span
+                class="placeholder">[你的聯絡方式(Email或電話)]</span></p>
+    </div>
+    <div class="footer">
+        <p>Provided by Africa Travel Institute (ATI)</p>
+    </div>
+</body>
+
+</html>
