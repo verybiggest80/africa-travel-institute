@@ -93,17 +93,30 @@
 
                 <div class="article-toc">
                     <div class="toc-title">文章目錄</div>
-                    <ul class="toc-list">
+                    <ul class="toc-list" id="toc-list">
                         <li><a href="#section-1">怎麼玩非洲最省錢?</a></li>
                         <li><a href="#section-2">如何使用這個懶人包</a></li>
                         <li><a href="#section-3">行程規劃的關鍵原則</a></li>
                         <li><a href="#section-4">五天精華行程</a></li>
-                        <li><a href="#section-5">七天經典行程</a></li>
-                        <li><a href="#section-6">十天深度行程</a></li>
-                        <li><a href="#section-7">三種行程比較</a></li>
-                        <li><a href="#section-8">行前準備注意事項</a></li>
-                        <li><a href="#section-9">常見問題 Q&A</a></li>
+                        <li class="toc-hidden" style="display:none;"><a href="#section-5">七天經典行程</a></li>
+                        <li class="toc-hidden" style="display:none;"><a href="#section-6">十天深度行程</a></li>
+                        <li class="toc-hidden" style="display:none;"><a href="#section-7">三種行程比較</a></li>
+                        <li class="toc-hidden" style="display:none;"><a href="#section-8">行前準備注意事項</a></li>
+                        <li class="toc-hidden" style="display:none;"><a href="#section-9">常見問題 Q&A</a></li>
                     </ul>
+                    <button id="toc-toggle" onclick="toggleToc()"
+                        style="background:none; border:none; cursor:pointer; color:var(--olive-green); font-size:0.9rem; padding:0.3rem 0; margin-top:0.3rem; display:flex; align-items:center; gap:4px;">
+                        <span id="toc-toggle-text">顯示更多 ▾</span>
+                    </button>
+                    <script>
+                        function toggleToc() {
+                            var hidden = document.querySelectorAll('.toc-hidden');
+                            var btn = document.getElementById('toc-toggle-text');
+                            var isExpanded = hidden[0].style.display !== 'none';
+                            hidden.forEach(function (el) { el.style.display = isExpanded ? 'none' : ''; });
+                            btn.textContent = isExpanded ? '顯示更多 ▾' : '收起 ▴';
+                        }
+                    </script>
                 </div>
 
                 <div class="article-content">
@@ -116,13 +129,27 @@
                             然而，這樣做也伴隨著一定的風險。因為網路上的當地旅行社琳瑯滿目，即便是一模一樣的行程，價格的浮動也可能非常巨大。最讓人擔心的，莫過於匯款後遇到假的旅行社，或是抵達當地後遭遇<strong>「丟包」</strong>的窘境。<br><br>
                             為了幫助大家避開這些陷阱，這篇懶人包中我會推薦我<strong>親自實際使用、驗證過</strong>的<strong>可信賴旅行社</strong>，是經過多方比較後，確保價格合理且旅遊品質優良的選擇。
                         </p>
+
                         <div class="safari-note">
-                            <div class="safari-note__title">遊獵筆記</div>
+                            <div class="safari-note__title">如何與當地旅行社聯絡？</div>
                             <p class="safari-note__text">
-                                <strong>⚠️ 預訂當地旅行社的前提：</strong><br>
-                                採取這種方式預訂，前提是您必須具備<strong>自行搭乘飛機從自己的國家抵達目的地機場</strong>的能力。<br>
+                                非洲當地的旅行社主要是以 <strong>WhatsApp</strong> 與 <strong>Email</strong> 作為最主要的溝通管道，也有不少旅行社會透過
+                                <strong>Instagram</strong> 溝通。<br>
+                                建議可以將您的需求整理好，透過這些管道以英文發送給旅行社，就能快速討論行程並取得報價喔！
+                            </p>
+                            <div style="text-align: center; margin: 2rem 0;">
+                                <a href="#" class="cta-button" onclick="openModal(); return false;">
+                                    查看我們推薦的旅行社
+                                </a>
+                            </div>
+                        </div>
+                        <div class="article-highlight">
+                            <p>
+                                <strong>📌 預訂當地旅行社的前提：</strong><br>
+                                採取這種方式預訂，前提是您必須具備<strong>自行搭乘飛機抵達目的地機場</strong>的能力。<br>
                                 一旦您安全抵達機場，您的「懶人行程」就開始了!<br>
-                                旅行社的接機人員就會在<strong>出境入口「舉牌接待」</strong>。後續的整趟旅程都會有<strong>專人帶領</strong>，旅程結束時也會有專人安全地將您送回機場。
+                                旅行社的接機人員就會在<strong>出境入口「舉牌接待」</strong>。<br>
+                                後續的整趟旅程都會有<strong>專人帶領</strong>，旅程結束時也會有專人安全地將您送回機場。
                             </p>
                         </div>
                     </section>
@@ -136,6 +163,54 @@
                             針對您偏好的旅遊天數（五天、七天或十天），這份範本已列好了對應的行程內容。<br><br>
                             只要把這個範本複製下來，直接傳送給我們推薦的可信賴旅行社，他們就能立刻了解您的需求，並提供對應的行程安排與報價，真正達成<strong>「懶人規劃」</strong>的目標！
                         </p>
+                        <div class="article-highlight">
+                            <p>
+                                <strong>手機版使用小提醒：</strong><br>
+                                點擊下方的「寄信給旅行社」按鈕後，會自動跳轉到您的手機郵件 App，並將信件內容填入。<br>
+                                信件中需要您填入的部分如姓名、人數等(有用中文標示)，要記得修改唷! <br>
+                                <strong>請注意：</strong> 點擊後請務必檢查信件內容是否完整，若有遺漏，請手動複製補齊後再寄出。
+                            </p>
+                        </div>
+
+                        <div
+                            style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 2rem 0 0.5rem;">
+                            <a href="#"
+                                onclick="handleInquiryClick(event, 'mailto:serengetiseries@gmail.com?subject=Inquiry%20for%205-Day%20Tanzania%20Safari&body=Dear%20Safari%20Operator%2C%0A%0AI%20am%20writing%20to%20inquire%20about%20a%205-day%20private%20safari%20tour%20in%20Tanzania%20(Tarangire%2C%20Ngorongoro%2C%20Lake%20Manyara).%20I%20found%20your%20company%20highly%20recommended%20by%20Africa%20Travel%20Institute%20(ATI)%2C%20and%20understand%20that%20they%20have%20arranged%20a%20special%20%2450%2Fperson%20discount%20for%20their%20readers.%0A%0AMy%20travel%20details%3A%0A-%20Dates%3A%20From%20%5B%E5%87%BA%E7%99%BC%E6%97%A5%E6%9C%9F%5D%20to%20%5B%E7%B5%90%E6%9D%9F%E6%97%A5%E6%9C%9F%5D%0A-%20Travelers%3A%20%5B%E5%A4%A7%E4%BA%BA%E4%BA%BA%E6%95%B8%5D%20Adults%2C%20%5B%E5%B0%8F%E5%AD%A9%E4%BA%BA%E6%95%B8(%E5%A6%82%E6%9C%89)%20%E5%8F%8A%E5%B9%B4%E9%BD%A1%5D%0A-%20Budget%3A%20%5BMid-range%20%E4%B8%AD%E5%83%B9%E4%BD%8D%20%2F%20Luxury%20%E5%A5%A2%E8%8F%AF%5D%0A%0APlease%20provide%20a%20detailed%20quote%20and%20itinerary.%0A%0ABest%20regards%2C%0A%5B%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%5D%0A%5B%E4%BD%A0%E7%9A%84%E8%81%AF%E7%B5%A1%E6%96%B9%E5%BC%8F%5D', 'Dear Safari Operator,\n\nI am writing to inquire about a 5-day private safari tour in Tanzania (Tarangire, Ngorongoro, Lake Manyara). I found your company highly recommended by Africa Travel Institute (ATI), and understand that they have arranged a special $50/person discount for their readers.\n\nMy travel details:\n- Dates: From [出發日期] to [結束日期]\n- Travelers: [大人人數] Adults, [小孩人數(如有) 及年齡]\n- Budget: [Mid-range 中價位 / Luxury 奢華]\n\nPlease provide a detailed quote and itinerary.\n\nBest regards,\n[你的名字]\n[你的聯絡方式(Email或電話)]')"
+                                class="cta-button"
+                                style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                                        fill="currentColor" />
+                                </svg>
+                                寄信給旅行社 (五天行程)
+                            </a>
+                            <a href="#"
+                                onclick="handleInquiryClick(event, 'mailto:serengetiseries@gmail.com?subject=Inquiry%20for%207-Day%20Tanzania%20Safari%20-%20%5B%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%5D&body=Dear%20Safari%20Operator%2C%0A%0AI%20am%20writing%20to%20inquire%20about%20a%207-day%20private%20safari%20tour%20in%20Tanzania.%20I%20found%20your%20company%20highly%20recommended%20by%20Africa%20Travel%20Institute%20(ATI)%2C%20and%20understand%20that%20they%20have%20arranged%20a%20special%20%2450%2Fperson%20discount%20for%20their%20readers.%0A%0ATravel%20Dates%3A%20From%20%5B%E5%87%BA%E7%99%BC%E6%97%A5%E6%9C%9F%5D%20to%20%5B%E7%B5%90%E6%9D%9F%E6%97%A5%E6%9C%9F%5D%0ANumber%20of%20Travelers%3A%20%5B%E5%A4%A7%E4%BA%BA%E4%BA%BA%E6%95%B8%5D%20Adults%2C%20%5B%E5%B0%8F%E5%AD%A9%E4%BA%BA%E6%95%B8(%E5%A6%82%E6%9C%89)%20%E5%8F%8A%E5%B9%B4%E9%BD%A1%5D%0ABudget%20Level%3A%20%5BMid-range%20%E4%B8%AD%E5%83%B9%E4%BD%8D%20%2F%20Luxury%20%E5%A5%A2%E8%8F%AF%5D%20Accommodation%0A%0APreferred%20Itinerary%3A%0A-%20Day%201%3A%20Arusha%20to%20Tarangire%20National%20Park%20(Afternoon%20game%20drive)%0A-%20Day%202%3A%20Tarangire%20to%20Ngorongoro%20Conservation%20Area%20(Morning%20game%20drive%2C%20afternoon%20transfer)%0A-%20Day%203%3A%20Ngorongoro%20Crater%20(Full%20day%20crater%20tour%20with%20picnic%20lunch)%0A-%20Day%204%3A%20Ngorongoro%20to%20Serengeti%20National%20Park%20(Transfer%20and%20afternoon%20game%20drive)%0A-%20Day%205%3A%20Serengeti%20National%20Park%20(Full%20day%20game%20drive)%0A-%20Day%206%3A%20Serengeti%20to%20Lake%20Manyara%20(Morning%20game%20drive%2C%20afternoon%20transfer)%0A-%20Day%207%3A%20Lake%20Manyara%20to%20Arusha%20(Morning%20game%20drive%2C%20afternoon%20transfer%20back%20to%20Arusha%2FAirport)%0A%0ALooking%20forward%20to%20hearing%20from%20you%20soon.%0A%0ABest%20regards%2C%0A%0A%5B%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%5D%0A%5B%E4%BD%A0%E7%9A%84%E8%81%AF%E7%B5%A1%E6%96%B9%E5%BC%8F(Email%E6%88%96%E9%9B%BB%E8%A9%B1)%5D', 'Dear Safari Operator,\n\nI am writing to inquire about a 7-day private safari tour in Tanzania. I found your company highly recommended by Africa Travel Institute (ATI), and understand that they have arranged a special $50/person discount for their readers.\n\n- Travel Dates: From [出發日期] to [結束日期]\n- Number of Travelers: [大人人數] Adults, [小孩人數(如有) 及年齡]\n- Budget Level: [Mid-range 中價位 / Luxury 奢華] Accommodation\n\nPreferred Itinerary:\n- Day 1: Arusha to Tarangire National Park (Afternoon game drive)\n- Day 2: Tarangire to Ngorongoro Conservation Area (Morning game drive, afternoon transfer)\n- Day 3: Ngorongoro Crater (Full day crater tour with picnic lunch)\n- Day 4: Ngorongoro to Serengeti National Park (Transfer and afternoon game drive)\n- Day 5: Serengeti National Park (Full day game drive)\n- Day 6: Serengeti to Lake Manyara (Morning game drive, afternoon transfer)\n- Day 7: Lake Manyara to Arusha (Morning game drive, afternoon transfer back to Arusha/Airport)\n\nLooking forward to hearing from you soon.\n\nBest regards,\n\n[你的名字]\n[你的聯絡方式(Email或電話)]')"
+                                class="cta-button"
+                                style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                                        fill="currentColor" />
+                                </svg>
+                                寄信給旅行社 (七天行程)
+                            </a>
+                            <a href="#"
+                                onclick="handleInquiryClick(event, 'mailto:serengetiseries@gmail.com?subject=Inquiry%20for%2010-Day%20Tanzania%20Safari%20%26%20Zanzibar%20-%20%5B%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%5D&body=Dear%20Safari%20Operator%2C%0A%0AI%20am%20writing%20to%20inquire%20about%20a%2010-day%20private%20safari%20and%20beach%20tour%20in%20Tanzania.%20I%20found%20your%20company%20highly%20recommended%20by%20Africa%20Travel%20Institute%20(ATI)%2C%20and%20understand%20that%20they%20have%20arranged%20a%20special%20%2450%2Fperson%20discount%20for%20their%20readers.%0A%0ATravel%20Dates%3A%20From%20%5B%E5%87%BA%E7%99%BC%E6%97%A5%E6%9C%9F%5D%20to%20%5B%E7%B5%90%E6%9D%9F%E6%97%A5%E6%9C%9F%5D%0ANumber%20of%20Travelers%3A%20%5B%E5%A4%A7%E4%BA%BA%E4%BA%BA%E6%95%B8%5D%20Adults%2C%20%5B%E5%B0%8F%E5%AD%A9%E4%BA%BA%E6%95%B8(%E5%A6%82%E6%9C%89)%20%E5%8F%8A%E5%B9%B4%E9%BD%A1%5D%0ABudget%20Level%3A%20%5BMid-range%20%E4%B8%AD%E5%83%B9%E4%BD%8D%20%2F%20Luxury%20%E5%A5%A2%E8%8F%AF%5D%20Accommodation%0A%0APreferred%20Itinerary%3A%0A-%20Day%201%3A%20Arusha%20to%20Tarangire%20National%20Park%20(Afternoon%20game%20drive)%0A-%20Day%202%3A%20Tarangire%20National%20Park%20(Full%20day%20game%20drive)%0A-%20Day%203%3A%20Tarangire%20to%20Ngorongoro%20Conservation%20Area%20(Morning%20game%20drive%2C%20afternoon%20transfer)%0A-%20Day%204%3A%20Ngorongoro%20Crater%20(Full%20day%20crater%20tour%20with%20picnic%20lunch)%0A-%20Day%205%3A%20Ngorongoro%20to%20Serengeti%20National%20Park%20(Transfer%20and%20afternoon%20game%20drive)%0A-%20Day%206%3A%20Serengeti%20National%20Park%20(Full%20day%20game%20drive)%0A-%20Day%207%3A%20Serengeti%20National%20Park%20(Full%20day%20game%20drive)%0A-%20Day%208%3A%20Serengeti%20to%20Zanzibar%20(Flight%20to%20Zanzibar%2C%20afternoon%20at%20beach)%0A-%20Day%209%3A%20Zanzibar%20(Free%20day%20for%20optional%20activities)%0A-%20Day%2010%3A%20Zanzibar%20to%20Departure%20(Morning%20at%20beach%2C%20afternoon%20departure)%0A%0ALooking%20forward%20to%20hearing%20from%20you%20soon.%0A%0ABest%20regards%2C%0A%0A%5B%E4%BD%A0%E7%9A%84%E5%90%8D%E5%AD%97%5D%0A%5B%E4%BD%A0%E7%9A%84%E8%81%AF%E7%B5%A1%E6%96%B9%E5%BC%8F(Email%E6%88%96%E9%9B%BB%E8%A9%B1)%5D', 'Dear Safari Operator,\n\nI am writing to inquire about a 10-day private safari and beach tour in Tanzania. I found your company highly recommended by Africa Travel Institute (ATI), and understand that they have arranged a special $50/person discount for their readers.\n\n- Travel Dates: From [出發日期] to [結束日期]\n- Number of Travelers: [大人人數] Adults, [小孩人數(如有) 及年齡]\n- Budget Level: [Mid-range 中價位 / Luxury 奢華] Accommodation\n\nPreferred Itinerary:\n- Day 1: Arusha to Tarangire National Park (Afternoon game drive)\n- Day 2: Tarangire National Park (Full day game drive)\n- Day 3: Tarangire to Ngorongoro Conservation Area (Morning game drive, afternoon transfer)\n- Day 4: Ngorongoro Crater (Full day crater tour with picnic lunch)\n- Day 5: Ngorongoro to Serengeti National Park (Transfer and afternoon game drive)\n- Day 6: Serengeti National Park (Full day game drive)\n- Day 7: Serengeti National Park (Full day game drive)\n- Day 8: Serengeti to Zanzibar (Flight to Zanzibar, afternoon at beach)\n- Day 9: Zanzibar (Free day for optional activities)\n- Day 10: Zanzibar to Departure (Morning at beach, afternoon departure)\n\nLooking forward to hearing from you soon.\n\nBest regards,\n\n[你的名字]\n[你的聯絡方式(Email或電話)]')"
+                                class="cta-button"
+                                style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
+                                        fill="currentColor" />
+                                </svg>
+                                寄信給旅行社 (十天行程)
+                            </a>
+                        </div>
                     </section>
 
                     <!-- SECTION 3: 行程規劃的關鍵原則 -->
@@ -649,25 +724,40 @@
                             </div>
                         </div>
 
-                        <h3>💰 貨幣與小費</h3>
-                        <ul>
-                            <li><strong>當地貨幣：</strong> 坦尚尼亞先令 (TZS)，但 Safari 業界普遍使用美元</li>
-                            <li><strong>建議攜帶：</strong> 新版美鈔（2006年後印製），部分商家不收舊版</li>
-                            <li><strong>小費參考：</strong>
-                                <ul>
-                                    <li><strong>Safari 導遊：US$ 20-30/天</strong></li>
-                                    <li><strong>住宿工作人員：US$ 10-15/天</strong></li>
-                                    <li><strong>行李搬運：US$ 2-5/次</strong></li>
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2rem 0;">
+                            <div style="background: rgba(250, 248, 243, 0.9); border-radius: 16px; padding: 2rem; text-align: left; border: 1px solid rgba(184, 92, 56, 0.12); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"
+                                onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,0.12)';this.style.borderColor='rgba(184,92,56,0.25)'"
+                                onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(0,0,0,0.06)';this.style.borderColor='rgba(184,92,56,0.12)'">
+                                <span
+                                    style="display: inline-block; font-size: 0.9rem; color: rgba(141, 85, 48, 0.9); background: rgba(243, 236, 220, 0.7); padding: 0.4rem 1rem; border-radius: 20px; margin-bottom: 1.2rem; font-weight: 500;">💰
+                                    貨幣與小費</span>
+                                <ul
+                                    style="margin: 0; padding-left: 1.2rem; font-size: 1.05rem; line-height: 1.9; color: rgba(59, 47, 47, 0.85);">
+                                    <li><strong>當地貨幣：</strong> 坦尚尼亞先令 (TZS)，但 Safari 業界普遍使用美元</li>
+                                    <li><strong>建議攜帶：</strong> 新版美鈔（2006年後印製），部分商家不收舊版</li>
+                                    <li><strong>小費參考：</strong>
+                                        <ul style="padding-left: 1.5rem;">
+                                            <li><strong>Safari 導遊：US$ 20-30/天</strong></li>
+                                            <li><strong>住宿工作人員：US$ 10-15/天</strong></li>
+                                            <li><strong>行李搬運：US$ 2-5/次</strong></li>
+                                        </ul>
+                                    </li>
                                 </ul>
-                            </li>
-                        </ul>
-
-                        <h3>📱 通訊與網路</h3>
-                        <ul>
-                            <li><strong>當地 SIM 卡：</strong> 推薦 Vodacom 或 Airtel，阿魯沙機場可購買</li>
-                            <li><strong>網路覆蓋：</strong> 城市區域 4G 可用，國家公園內訊號不穩定</li>
-                            <li><strong>建議：</strong> 重要聯繫在城市時處理，Safari 期間享受 Digital Detox</li>
-                        </ul>
+                            </div>
+                            <div style="background: rgba(250, 248, 243, 0.9); border-radius: 16px; padding: 2rem; text-align: left; border: 1px solid rgba(184, 92, 56, 0.12); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);"
+                                onmouseover="this.style.transform='translateY(-8px)';this.style.boxShadow='0 12px 32px rgba(0,0,0,0.12)';this.style.borderColor='rgba(184,92,56,0.25)'"
+                                onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(0,0,0,0.06)';this.style.borderColor='rgba(184,92,56,0.12)'">
+                                <span
+                                    style="display: inline-block; font-size: 0.9rem; color: rgba(141, 85, 48, 0.9); background: rgba(243, 236, 220, 0.7); padding: 0.4rem 1rem; border-radius: 20px; margin-bottom: 1.2rem; font-weight: 500;">📱
+                                    通訊與網路</span>
+                                <ul
+                                    style="margin: 0; padding-left: 1.2rem; font-size: 1.05rem; line-height: 1.9; color: rgba(59, 47, 47, 0.85);">
+                                    <li><strong>當地 SIM 卡：</strong> 推薦 Vodacom 或 Airtel，阿魯沙機場可購買</li>
+                                    <li><strong>網路覆蓋：</strong> 城市區域 4G 可用，國家公園內訊號不穩定</li>
+                                    <li><strong>建議：</strong> 重要聯繫在城市時處理，Safari 期間享受 Digital Detox (數位排毒)</li>
+                                </ul>
+                            </div>
+                        </div>
 
                         <h3>🛡️ 旅行保險</h3>
                         <div class="safari-note">
